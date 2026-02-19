@@ -48,5 +48,6 @@ class Program
         lecture2.DisplayStandardDetails();
         Console.WriteLine();
         lecture2.DisplayFullDetails();
+        Console.WriteLine();
     }
 }
