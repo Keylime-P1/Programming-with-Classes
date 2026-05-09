@@ -4,6 +4,7 @@ public class Write
 {
     string[] promptList = {"test the thing 1 ", "test the thing 2 ", "test the thing 3 ", "test the thing 4 "};
     public List<string> userEntries = new List<string>{};
+    public List<string> loadedEntries = new List<string>{};
     public void NewEntry()
     {
         Random random = new Random();
