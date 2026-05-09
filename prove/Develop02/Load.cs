@@ -9,7 +9,7 @@ public class Load
         foreach (string entry in testRead)
         {
             Console.WriteLine(entry);
-            data.userEntries.Add(entry);
+            data.loadedEntries.Add(entry);
         }
     }
 }
