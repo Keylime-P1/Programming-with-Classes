@@ -16,6 +16,10 @@ public class Write
     }
     public void DisplayEntries()
     {
+        foreach (string entry in loadedEntries)
+        {
+            Console.WriteLine($"\n{entry}\n");
+        }
         foreach ( string entry in userEntries)
         {
             Console.WriteLine($"\n{entry}\n");
