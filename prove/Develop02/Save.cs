@@ -16,7 +16,7 @@ public class Save
             Console.WriteLine(entry);
             using (StreamWriter outputFile = new StreamWriter(fileName, true))
             {
-                outputFile.WriteLine(entry);
+                outputFile.AppendAllText(entry);
             }
         }
     }
