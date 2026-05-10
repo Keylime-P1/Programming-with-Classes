@@ -30,7 +30,6 @@ class Program
             else if(option1 == 3)
             {
                 load.File(write1);
-                save.ClearLoad();
             }
             else if(option1 == 4)
             {
