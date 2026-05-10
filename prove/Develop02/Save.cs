@@ -16,16 +16,8 @@ public class Save
             Console.WriteLine(entry);
             using (StreamWriter outputFile = new StreamWriter(fileName, true))
             {
-                outputFile.AppendAllText(entry);
+                outputFile.WriteLine(entry);
             }
         }
     }
-    public void ClearLoad()
-    {
-        using (StreamWriter outputFile = new StreamWriter(fileName, true))
-            {
-                outputFile.WriteLine("");
-            }
-    }
-    
 }

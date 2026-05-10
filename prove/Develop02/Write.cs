@@ -2,7 +2,7 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Write
 {
-    string[] promptList = {"test the thing 1 ", "test the thing 2 ", "test the thing 3 ", "test the thing 4 "};
+    string[] promptList = {"What is something that made you happy today? ", "Who is someone you are thankful for? ", "What was something that was hard today? ", "What was something you tried to imporve on today? "};
     public List<string> userEntries = new List<string>{};
     public List<string> loadedEntries = new List<string>{};
     public void NewEntry()
