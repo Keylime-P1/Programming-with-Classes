@@ -4,17 +4,33 @@ using Microsoft.VisualBasic;
 
 public class Word
 {
-    private List<string> scriptureVerses = new List<string>();
-    public void GetSharedScripture(string verse1, string verse2)
+    private string _word;
+    private int _wordCount;
+    private bool _isHidden;
+
+    public Word(string word)
     {
-        scriptureVerses.Add(verse1);
-        scriptureVerses.Add(verse2);
+        _word = word;
     }
-    public void ReadTest()
+    public void Display()
     {
-        foreach (string verse in scriptureVerses)
+        if (_isHidden == true)
         {
-            Console.WriteLine(verse);
+            _wordCount = _word.Length;
+            for (int i = 0; i < _wordCount; i++)
+            {
+                Console.Write("-");
+            }
+            Console.Write(" ");
+        }
+        else
+        {
+            Console.Write(_word + " ");
         }
     }
+    public void Hide()
+    {
+        _isHidden = true;
+    }
+    
 }

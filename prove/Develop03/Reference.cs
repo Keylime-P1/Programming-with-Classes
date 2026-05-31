@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Microsoft.VisualBasic;
 
 public class Reference
@@ -28,22 +29,6 @@ public class Reference
         _startVerse = startVerse;
         _endVerse = endVerse;
     }
-    public void SetReferenceBook(string book)
-    {
-        _book = book;
-    }
-    public void SetReferenceChapter(int chapter)
-    {
-        _chapter = chapter;
-    }
-    public void SetReferenceStartVerse(int startVerse)
-    {
-        _startVerse = startVerse;
-    }
-    public void SetReferenceEndVerse(int endVerse)
-    {
-        _endVerse = endVerse;
-    }
     public string GetReferenceBook()
     {
         return _book;
@@ -59,5 +44,12 @@ public class Reference
     public int GetReferenceEndVerse()
     {
         return _endVerse;
+    }
+    public void DisplayReference()
+    {
+        Console.Write(_book + " ");
+        Console.Write(_chapter + ":");
+        Console.Write(_startVerse + "-");
+        Console.WriteLine(_endVerse);
     }
 }

@@ -11,9 +11,9 @@ public class Scripture
         {
             {3, new Dictionary<int, string>()
                 {
-                    {5, "This is totally John 3:5"},
+                    {5, "Jesus answered, Verily, verily, I say unto thee, Except a man be born of water and of the Spirit, he cannot enter into the kingdom of God."},
                     {6, "This is definitely John 3:6"},
-                    {7, "This is totally John 7"},
+                    {7, "Marvel not that I said unto thee, Ye must be born again."},
                 }
             },
             {4, new Dictionary<int, string>()
