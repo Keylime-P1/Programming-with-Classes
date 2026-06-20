@@ -1,5 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-
 public class Write
 {
     string[] promptList = {"What is something that made you happy today? ", "Who is someone you are thankful for? ", "What was something that was hard today? ", "What was something you tried to imporve on today? "};

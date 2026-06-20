@@ -1,15 +1,12 @@
 using System;
-using System.Security.Cryptography.X509Certificates;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Write write1 = new Write();
+        Entry entry1 = new Entry();
+        Journal journal1 = new Journal();
         string readOption = "";
         int option1 = 0;
-        Save save = new Save();
-        Load load = new Load();
 
         Console.WriteLine("Welcome to the journal program!\nWould you like to:");
         
@@ -18,23 +15,23 @@ class Program
             Console.WriteLine("1. Write\n2. Display\n3. Load\n4. Save\n5. Quit");
             readOption = Console.ReadLine();
             option1 = int.Parse(readOption);
-
-            if (option1 == 1)
+            
+            if(option1 == 1)
             {
-                write1.NewEntry();
+                entry1.NewEntry();
+                journal1.GetEntries(entry1.GetEntry());
             }
             else if(option1 == 2)
             {
-                write1.DisplayEntries();
+                journal1.DisplayEntries();
             }
             else if(option1 == 3)
             {
-                load.File(write1);
+                journal1.LoadEntries();
             }
             else if(option1 == 4)
             {
-                save.File();
-                save.SaveEntries(write1);
+                journal1.SaveEntries();
             }
             else
             {
